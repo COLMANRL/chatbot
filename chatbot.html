@@ -147,7 +147,7 @@
 <body>
   <div id="chat-container">
     <div id="chat-header">
-      <img src="C:\Users\HP\Desktop\bpo\chatbot.png" alt="Logo" /> New Frontier BPO Assistant
+      <img src="C:\Users\HP\Desktop\gitprojects\bpo\chatbot.png" alt="Logo" /> New Frontier BPO Assistant
     </div>
     <div id="chat-box"></div>
     <div id="input-container">
@@ -389,18 +389,18 @@
       if (lowerMessage.includes('services') || lowerMessage.includes('what do you offer') || lowerMessage.includes('what you do')) {
         return {
           text: `${greeting}New Frontier BPO offers a comprehensive range of outsourcing services to enhance your business operations:\n\n` +
-               `• [Customer Support](Tell me about your customer support services) - 24/7 multilingual support across all channels\n` +
-               `• [Data Processing](Tell me about your data processing services) - High-accuracy data entry and processing\n` +
-               `• [Back Office Support](Tell me about your back office services) - Administrative and operational support\n` +
-               `• [Content Moderation](Tell me about your content moderation services) - Platform safety and community standards\n` +
-               `• [Software Development](Tell me about your software development services) - Custom application development\n\n` +
+               `• [Customer Support](Tell me about your customer support ) - 24/7 multilingual support across all channels\n` +
+               `• [Data Processing](Tell me about your data processing ) - High-accuracy data entry and processing\n` +
+               `• [Back Office Support](Tell me about your back office ) - Administrative and operational support\n` +
+               `• [Content Moderation](Tell me about your content moderation ) - Platform safety and community standards\n` +
+               `• [Software Development](Tell me about your software development ) - Custom application development\n\n` +
                `Which service would you like to learn more about?`,
           buttons: [
-            { label: 'Customer Support', message: 'Tell me about your customer support services' },
-            { label: 'Data Processing', message: 'Tell me about your data processing services' },
-            { label: 'Back Office', message: 'Tell me about your back office services' },
-            { label: 'Content Moderation', message: 'Tell me about your content moderation services' },
-            { label: 'Software Development', message: 'Tell me about your software development services' }
+            { label: 'Customer Support', message: 'Tell me about your customer support service' },
+            { label: 'Data Processing', message: 'Tell me about your data processing service' },
+            { label: 'Back Office', message: 'Tell me about your back office service' },
+            { label: 'Content Moderation', message: 'Tell me about your content moderation service' },
+            { label: 'Software Development', message: 'Tell me about your software development service' }
           ]
         };
       }
@@ -413,8 +413,8 @@
                `• ${services.customer_support.benefits.join('\n• ')}\n\n` +
                `We can customize our support solutions to match your brand voice and specific requirements. Would you like to discuss how we can support your customer service needs?`,
           buttons: [
-            { label: 'Request Demo', message: 'I would like a demo of your customer support services' },
-            { label: 'Pricing', message: 'What is the pricing for customer support services?' },
+            { label: 'Request Demo', message: 'I would like a demo of your customer support' },
+            { label: 'Pricing', message: 'What is the pricing for this ?' },
             { label: 'Other Services', message: 'Tell me about your other services' }
           ]
         };
@@ -443,7 +443,7 @@
                `• ${services.back_office.benefits.join('\n• ')}\n\n` +
                `Our back office solutions can help you reduce operational costs while improving efficiency. What specific back office functions are you looking to optimize?`,
           buttons: [
-            { label: 'Request Demo', message: 'I would like a demo of your back office services' },
+            { label: 'Request Demo', message: 'I would like a demo of your back office ' },
             { label: 'Pricing', message: 'What is the pricing for back office services?' },
             { label: 'Other Services', message: 'Tell me about your other services' }
           ]
